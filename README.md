@@ -6,3 +6,6 @@ Le livre de Walidou est un [livre dont vous êtes le héros](https://fr.wikipedi
 
 ### Fonctionnalités
 - Chargement et sauvegarde d'une histoire
+
+## Maquette
+ [Lien vers la maquette](https://www.figma.com/file/1NebmQL2UvMmTIscu0DbeE/Projet-Android?node-id=0%3A1)
