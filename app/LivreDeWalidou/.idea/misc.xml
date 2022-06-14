@@ -9,10 +9,22 @@
         <entry key="..\:/Users/Admin/Desktop/projet/Java/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/mipmap-anydpi-v26/arrow_round.xml" value="0.196" />
         <entry key="..\:/Users/Admin/Desktop/projet/Java/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.196" />
         <entry key="..\:/Users/Admin/Desktop/projet/Java/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.196" />
+        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3225" />
         <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/drawable/arrow_background.xml" value="0.2265" />
+        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/drawable/bach-arrow_background.xml" value="0.3225" />
+        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/drawable/bach_arrow_background.xml" value="0.195" />
+        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/drawable/bg_back.xml" value="0.3225" />
+        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/drawable/bg_background.xml" value="0.3225" />
         <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/drawable/border.xml" value="0.2265" />
-        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/layout/activity_load_game.xml" value="0.2" />
-        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/layout/activity_main.xml" value="0.1875" />
+        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3225" />
+        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/layout/activity_game.xml" value="0.2" />
+        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/layout/activity_load_game.xml" value="0.4" />
+        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/layout/activity_new_game.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/mipmap-anydpi-v26/arrow_round.xml" value="0.196" />
+        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/mipmap-anydpi-v26/bach-arrow.xml" value="0.196" />
+        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/mipmap-anydpi-v26/bg.xml" value="0.196" />
+        <entry key="..\:/Users/Walid-oul/Desktop/le-livre-de-walidou/app/LivreDeWalidou/app/src/main/res/mipmap-anydpi-v26/bg_round.xml" value="0.196" />
       </map>
     </option>
   </component>

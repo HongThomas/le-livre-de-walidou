@@ -1,8 +1,10 @@
-package com.android.LivreDeWalidou;
+package com.android.LivreDeWalidou.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.android.LivreDeWalidou.R;
 
 public class LoadGameActivity extends AppCompatActivity {
 

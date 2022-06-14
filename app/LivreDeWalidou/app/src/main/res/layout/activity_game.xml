@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.GameActivity">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/green"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/button4"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/light_green"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:gravity="center_horizontal"
+                android:text="HISTOIRE"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#013704"
+                    android:text="Walidou se réveille, il a les yeux collés et a un léger mal de crâne (rien de grave).  En se levant il se rend compte qu'il ne reconnait pas les lieux. (Peut-être a t'il bu hier, qui sais ?) Il a apparemment passé la nuit sous un magnifique chêne situé en haut d'une colline, à son pied plusieurs cadavres de bouteilles : Tequila, Vodka, Absinthe et compagnie... (Il a surement bu hier). Dans la tête de Walidou c'est le noir total, il ne se souvient pas du tout comment il est arriveé là (Bizarre). Il a apparemment passé la nuit sous un magnifique chêne situé en haut d'une colline, à son pied plusieurs cadavres de bouteilles : Tequila, Vodka, Absinthe et compagnie... (Il a surement bu hier). Dans la tête de Walidou c'est le noir total, il ne se souvient pas du tout comment il est arriveé là (Bizarre)." />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="227dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic[3]" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

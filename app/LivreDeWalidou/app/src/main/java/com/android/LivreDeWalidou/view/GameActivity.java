@@ -1,13 +1,16 @@
 package com.android.LivreDeWalidou.view;
 
-import com.android.LivreDeWalidou.model.Game;
-import com.android.LivreDeWalidou.viewmodel.GameViewModel;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class GameActivity {
+import android.os.Bundle;
 
-    private GameViewModel gameViewModel;
+import com.android.LivreDeWalidou.R;
 
-    public GameActivity(GameViewModel gameViewModel) {
-        this.gameViewModel = gameViewModel;
+public class GameActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_game);
     }
 }
