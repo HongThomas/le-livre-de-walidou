@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.GameActivity">
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@color/green"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,11 +26,12 @@
 
             <ImageButton
                 android:id="@+id/button4"
-                android:layout_width="50dp"
-                android:layout_height="45dp"
+                android:layout_width="52dp"
+                android:layout_height="48dp"
                 android:layout_margin="10dp"
                 android:layout_weight="0.5"
                 android:backgroundTint="@color/button"
+                android:contentDescription="@string/app_name"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:srcCompat="@drawable/arrow_back_navbar_32" />
 
@@ -38,7 +39,8 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="15"
+                android:layout_marginRight="50dp"
+                android:layout_weight="10"
                 android:gravity="center_horizontal"
                 android:text="HISTOIRE"
                 android:textSize="28sp" />
@@ -47,7 +49,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="524dp">
+            android:layout_height="match_parent"
+            android:layout_weight="5">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -90,7 +93,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="141dp"
+            android:layout_height="wrap_content"
             android:background="@color/background"
             android:orientation="vertical">
 
@@ -98,47 +101,42 @@
                 android:id="@+id/button7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:background="@color/button"
-                android:bottomLeftRadius="2dp"
+                android:layout_margin="1dp"
+                android:backgroundTint="@color/button"
                 android:bottomRightRadius="2dp"
                 android:insetTop="0dp"
-                android:insetBottom="5dp"
+                android:insetBottom="0dp"
                 android:text="AIDER WALIDOU A RETROUVER SON CHEMIN"
                 android:textSize="20sp"
-                android:topLeftRadius="2dp"
-                android:topRightRadius="2dp"
-                app:strokeColor="#FFFFFF"
-                app:strokeWidth="3dp"
-                tools:insetBottom="5dp" />
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/button8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/button"
-                android:bottomLeftRadius="0dp"
-                android:bottomRightRadius="0dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:backgroundTint="@color/button"
                 android:insetTop="0dp"
                 android:insetBottom="1dp"
                 android:text="LAISSER WALID SE DEBROUILLER TOUT SEUL"
                 android:textSize="20sp"
-                android:topLeftRadius="0dp"
-                android:topRightRadius="0dp" />
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/button"
-                android:bottomLeftRadius="0dp"
-                android:bottomRightRadius="0dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:backgroundTint="@color/button"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="FAIRE DEMI-TOUR"
                 android:textSize="20sp"
-                android:topLeftRadius="0dp"
-                android:topRightRadius="0dp" />
+                app:cornerRadius="0dp"/>
         </LinearLayout>
 
     </LinearLayout>
