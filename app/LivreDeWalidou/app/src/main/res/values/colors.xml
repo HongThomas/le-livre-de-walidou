@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="green">#0D770B</color>
     <color name="light_green">#99C90F</color>
+    <color name="background">#DDCFE6</color>
+    <color name="navbar">#5D576B</color>
+    <color name="button">#8884FF</color>
 </resources>
