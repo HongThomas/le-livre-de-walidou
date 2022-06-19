@@ -3,6 +3,14 @@
   <component name="WizardSettings">
     <option name="children">
       <map>
+<<<<<<< HEAD
+        <entry key="imageWizard">
+          <value>
+            <PersistentState />
+          </value>
+        </entry>
+=======
+>>>>>>> origin/main
         <entry key="vectorWizard">
           <value>
             <PersistentState>
@@ -18,7 +26,11 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
+<<<<<<< HEAD
+                                      <entry key="url" value="jar:file:/C:/Users/33699/AppData/Local/JetBrains/Toolbox/apps/AndroidStudio/ch-0/212.5712.43.2112.8609683/plugins/android/lib/android.jar!/images/material/icons/materialicons/arrow_back/baseline_arrow_back_24.xml" />
+=======
                                       <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/arrow_back/baseline_arrow_back_24.xml" />
+>>>>>>> origin/main
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -29,8 +41,13 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="ffffff" />
+<<<<<<< HEAD
+                            <entry key="outputName" value="backj_button" />
+                            <entry key="sourceFile" value="C:\Users\33699\Desktop\le-livre-de-walidou\app\LivreDeWalidou" />
+=======
                             <entry key="outputName" value="arrow_back_navbar_32" />
                             <entry key="sourceFile" value="C:\Users\yahdd\Documents\laptop\S4\app_mobile\le-livre-de-walidou\app\LivreDeWalidou" />
+>>>>>>> origin/main
                           </map>
                         </option>
                       </PersistentState>
