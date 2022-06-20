@@ -1,12 +1,9 @@
 package com.android.LivreDeWalidou.model.comp;
 
-import com.android.LivreDeWalidou.model.repository.IStoryItem;
-
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Objects;
+import java.util.UUID;
 
 public class Page {
     private final List<IStoryItem<?>> items;
@@ -43,5 +40,18 @@ public class Page {
 
     public List<IStoryItem<?>> getItems() {
         return this.items;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Page page = (Page) o;
+        return this.items.equals(page.items) && this.choices.equals(page.choices);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.items, this.choices);
     }
 }
