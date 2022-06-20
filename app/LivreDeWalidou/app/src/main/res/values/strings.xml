@@ -2,5 +2,6 @@
     <string name="app_name">Le Livre De Walidou</string>
     <string name="new_game">NOUVELLE PARTIE</string>
     <string name="load_game">CHARGER UNE PARTIE</string>
+    <string name="last_game">DERNIERE PARTIE</string>
 
 </resources>

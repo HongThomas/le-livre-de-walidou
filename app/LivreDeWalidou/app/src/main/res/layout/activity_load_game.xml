@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@color/green"
+        android:background="@color/background"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,17 +56,15 @@
             android:background="@color/background"
             android:gravity="center_horizontal"
             android:padding="15dp"
-            android:text="DERNIERE PARTIE"
+            android:text="@string/last_game"
             android:textColor="#000000"
             android:textSize="28sp" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
+        <ImageButton
+            android:id="@+id/lastGame"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:scaleType="centerInside"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            app:srcCompat="@drawable/ic_launcher_background" />
 
         <TextView
             android:id="@+id/textView3"
@@ -75,18 +73,16 @@
             android:background="@color/background"
             android:gravity="center_horizontal"
             android:padding="15dp"
-            android:text="CHOISIR PARTIE"
+            android:text="@string/load_game"
             android:textColor="#000000"
             android:textSize="28sp" />
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:background="@color/background"
-            android:scaleType="fitXY"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </ListView>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,4 +17,8 @@ public class GameRepository {
     public void addGame(Story newGame) {
 
     }
+
+    public List<Game> getGames() {
+        return this.games;
+    }
 }

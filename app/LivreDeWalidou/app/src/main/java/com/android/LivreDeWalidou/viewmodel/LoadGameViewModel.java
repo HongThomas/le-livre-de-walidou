@@ -4,6 +4,8 @@ import com.android.LivreDeWalidou.model.Game;
 import com.android.LivreDeWalidou.model.repository.GameRepository;
 import com.android.LivreDeWalidou.view.LoadGameActivity;
 
+import java.util.List;
+
 public class LoadGameViewModel {
     private GameRepository games;
     private LoadGameActivity selectedGame;
@@ -13,8 +15,12 @@ public class LoadGameViewModel {
         this.selectedGame = selectedGame;
     }
 
+    /*
     public void loadGame(Game game) {
         this.selectedGame.setCurrentGame(this.games.load(game));
     }
+     */
+
+    public List<Game> getRepositoryGames() {return this.games.getGames();}
 
 }
