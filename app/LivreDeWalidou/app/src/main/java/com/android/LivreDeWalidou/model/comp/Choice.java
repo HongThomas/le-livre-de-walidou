@@ -1,8 +1,8 @@
 package com.android.LivreDeWalidou.model.comp;
 
 public class Choice {
-    private Page suiteHistoire;
     private StoryText text;
+    private Page suiteHistoire;
 
     public Choice(Page suiteHistoire, StoryText choiceText) {
         this.suiteHistoire = suiteHistoire;
