@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.android.LivreDeWalidou.R;
+import com.android.LivreDeWalidou.viewmodel.GameViewModel;
 
 public class GameActivity extends AppCompatActivity {
 
@@ -13,6 +14,8 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+
+
     }
 
     public void goBack(View view){
