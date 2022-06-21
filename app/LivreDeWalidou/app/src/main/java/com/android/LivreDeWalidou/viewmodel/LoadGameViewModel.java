@@ -14,7 +14,7 @@ public class LoadGameViewModel {
     }
 
     public void loadGame(Game game) {
-        this.selectedGame.setCurrentGame(this.games.load(game));
+        //this.selectedGame.setCurrentGame(this.games.load(game));
     }
 
 }
