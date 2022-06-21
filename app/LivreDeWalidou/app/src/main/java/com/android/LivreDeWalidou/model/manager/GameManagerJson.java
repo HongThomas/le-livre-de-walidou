@@ -2,6 +2,7 @@ package com.android.LivreDeWalidou.model.manager;
 
 import com.android.LivreDeWalidou.model.Game;
 import com.android.LivreDeWalidou.model.IGame;
+import com.android.LivreDeWalidou.model.comp.StoryImage;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonIOException;
@@ -9,10 +10,12 @@ import com.google.gson.JsonIOException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.net.URL;
 
 public class GameManagerJson implements GameManager {
 
     private final Gson gson = new GsonBuilder().setPrettyPrinting()
+            .registerTypeAdapter(StoryImage.class, StoryImageAdapter.class)
             .serializeNulls()
             .create();
 

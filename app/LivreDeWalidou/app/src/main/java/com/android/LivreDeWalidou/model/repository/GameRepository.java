@@ -19,32 +19,33 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class GameRepository implements IGameRepository {
     private List<IGame> games;
     private GameManager gameManager;
-    private File gameFolder;
+    private File gamesFolder;
 
-    public GameRepository() {
+    public GameRepository(File gamesFolder) {
         this.games = new ArrayList<>();
         this.gameManager = new GameManagerJson();
-        File dataFolder = Environment.getDataDirectory();
-        File gameFolder = new File(dataFolder, "games");
+        this.gamesFolder = gamesFolder;
         try {
-            gameFolder.createNewFile();
+            this.gamesFolder.createNewFile();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        File[] files = gameFolder.listFiles(new JsonFileFilter());
-        for(File json : files) {
+        File[] files = this.gamesFolder.listFiles(new JsonFileFilter());
+        Arrays.stream(files).forEach(json -> {
             try {
-                this.games.add(this.gameManager.createGame(new FileReader(json)));
+                this.gameManager.createGame(new FileReader(json));
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
-        }
+        });
+
     }
 
     @Override
@@ -67,7 +68,7 @@ public class GameRepository implements IGameRepository {
         File json;
         int i = 0;
         do {
-            json = new File(this.gameFolder, String.format("%s_%s_%d", game.getStory().getTitle().getContent(), game.hashCode(), i));
+            json = new File(this.gamesFolder, String.format("%s_%s_%d", game.getStory().getTitle().getContent(), game.hashCode(), i));
             i++;
         } while(json.exists());
         try {
