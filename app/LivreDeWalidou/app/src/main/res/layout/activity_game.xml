@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@color/green"
+        android:background="@color/background"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,10 +18,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/border"
+            android:background="@color/navbar"
             android:gravity="center"
-            android:orientation="horizontal"
-            tools:background="@color/navbar">
+            android:orientation="horizontal">
 
 
             <ImageButton
@@ -29,8 +28,10 @@
                 android:layout_width="50dp"
                 android:layout_height="45dp"
                 android:layout_margin="10dp"
+                android:layout_marginRight="15dp"
                 android:layout_weight="0.5"
-                android:backgroundTint="@color/button"
+                android:background="@color/button"
+                android:onClick="goBack"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:srcCompat="@drawable/arrow_back_navbar_32" />
 
@@ -38,9 +39,11 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="15"
-                android:gravity="center_horizontal"
-                android:text="HISTOIRE"
+                android:layout_weight="4"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:text="@string/new_game"
+                android:textAlignment="center"
                 android:textSize="28sp" />
 
         </LinearLayout>
@@ -57,10 +60,10 @@
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:background="@color/background"
                     android:fontFamily="@font/kumbhsans"
-                    android:justificationMode="inter_word"
+                    android:justificationMode="none"
                     android:paddingLeft="10dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
@@ -75,70 +78,27 @@
                     android:textSize="18dp"
                     tools:paddingRight="10dp" />
 
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:adjustViewBounds="true"
-                    android:background="@color/background"
-                    android:contentDescription="Photo de Walidou"
-                    tools:scaleType="centerInside"
-                    tools:srcCompat="@tools:sample/backgrounds/scenic[3]" />
-
             </LinearLayout>
         </ScrollView>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="141dp"
-            android:background="@color/background"
+            android:layout_height="match_parent"
+            android:background="@color/navbar"
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button7"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:background="@color/button"
-                android:bottomLeftRadius="2dp"
-                android:bottomRightRadius="2dp"
-                android:insetTop="0dp"
-                android:insetBottom="5dp"
-                android:text="AIDER WALIDOU A RETROUVER SON CHEMIN"
-                android:textSize="20sp"
-                android:topLeftRadius="2dp"
-                android:topRightRadius="2dp"
-                app:strokeColor="#FFFFFF"
-                app:strokeWidth="3dp"
-                tools:insetBottom="5dp" />
-
-            <Button
-                android:id="@+id/button8"
+                android:id="@+id/choice_one"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/button"
-                android:bottomLeftRadius="0dp"
-                android:bottomRightRadius="0dp"
-                android:insetTop="0dp"
-                android:insetBottom="1dp"
-                android:text="LAISSER WALID SE DEBROUILLER TOUT SEUL"
-                android:textSize="20sp"
-                android:topLeftRadius="0dp"
-                android:topRightRadius="0dp" />
+                android:text="Button" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/choice_two"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/button"
-                android:bottomLeftRadius="0dp"
-                android:bottomRightRadius="0dp"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                android:text="FAIRE DEMI-TOUR"
-                android:textSize="20sp"
-                android:topLeftRadius="0dp"
-                android:topRightRadius="0dp" />
+                android:text="Button" />
+
         </LinearLayout>
 
     </LinearLayout>

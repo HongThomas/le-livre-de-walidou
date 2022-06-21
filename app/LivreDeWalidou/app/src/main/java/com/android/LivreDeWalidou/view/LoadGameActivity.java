@@ -22,27 +22,6 @@ public class LoadGameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_load_game);
-        gameLoadedButtons = this.buildGameButtons(loadGameController.getGames());
-        gameLoadedButtons
-                .stream()
-                .map(button -> button.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        currentGame = loadGameController.loadGame(gameSelected);
-                        Intent intent = new Intent(LoadGameActivity.this, GameActivity.class);
-                        intent.putExtra("game", currentGame);
-                        startActivity(intent);
-                    }
-                }));
-    }
-
-    public List<ImageView> buildGameButtons(List<Game> games) {
-        List<ImageView> gameButtons;
-        games.forEach(game -> {
-            gameButtons.add(new ImageView(game.getImage()));
-        });
-
-        return gameButtons;
     }
 
     public void setCurrentGame(Game game) {
