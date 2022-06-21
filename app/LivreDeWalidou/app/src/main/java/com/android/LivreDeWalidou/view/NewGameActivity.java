@@ -12,7 +12,7 @@ public class NewGameActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_game);
+        setContentView(R.layout.activity_game);
     }
 
     public void goBack(View view){

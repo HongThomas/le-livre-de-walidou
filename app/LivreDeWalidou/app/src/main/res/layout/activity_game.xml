@@ -7,35 +7,38 @@
     android:orientation="vertical"
     tools:context=".view.GameActivity">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navbar"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.5"
+            android:background="@color/button"
+            android:onClick="goBack"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:srcCompat="@drawable/arrow_back_navbar_32" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:gravity="center"
-            android:orientation="horizontal"
-            tools:background="@color/navbar">
+            android:layout_weight="4"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textSize="28sp" />
 
-
-            <ImageButton
-                android:id="@+id/button4"
-                android:layout_width="50dp"
-                android:layout_height="45dp"
-                android:layout_margin="10dp"
-                android:layout_weight="0.5"
-                android:backgroundTint="@color/button"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:srcCompat="@drawable/arrow_back_navbar_32" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="15"
-                android:gravity="center_horizontal"
-                android:text="HISTOIRE"
-                android:textSize="28sp" />
-
-        </LinearLayout>
+    </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
