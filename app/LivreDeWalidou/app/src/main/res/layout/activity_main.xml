@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/background"
-    tools:context=".view.MainActivity">
+    tools:context="com.project.LivreDeWalidou.view.MainActivity">
 
     <TextView
         android:id="@+id/textView"
