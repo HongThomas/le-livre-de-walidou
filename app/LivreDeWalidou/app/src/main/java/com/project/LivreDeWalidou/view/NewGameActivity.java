@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.project.LivreDeWalidou.LivreDeWalidou.R;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.project.LivreDeWalidou.R;
 
 public class NewGameActivity extends AppCompatActivity {
 

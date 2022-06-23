@@ -44,85 +44,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:background="@color/background">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/background"
-                        android:fontFamily="@font/kumbhsans"
-                        android:justificationMode="inter_word"
-                        android:paddingLeft="10dp"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="Walidou se réveille, il a les yeux collés et a un léger mal de crâne (rien de grave). \n \n En se levant il se rend compte qu'il ne
-                         reconnait pas les lieux. (Peut-être a t'il bu hier, qui sais ?) \n \n Il a apparemment passé la nuit sous un magnifique chêne situé en haut d'une colline,
-                          à son pied plusieurs cadavres de bouteilles : Tequila, Vodka, Absinthe et compagnie... (Il a surement bu hier).\n \n Dans la tête de Walidou c'est le noir total,
-                           il ne se souvient pas du tout comment il est arriveé là (Bizarre).\n \n Il a apparemment passé la nuit sous un magnifique chêne situé en haut d'une colline,
-                            à son pied plusieurs cadavres de bouteilles : Tequila, Vodka, Absinthe et compagnie... (Il a surement bu hier).\n \n Dans la tête de Walidou c'est le noir total,
-                             il ne se souvient pas du tout comment il est arriveé là (Bizarre)."
-                        android:textAlignment="viewStart"
-                        android:textColor="#000000"
-                        android:textSize="18dp"
-                        tools:paddingRight="10dp" />
-
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:adjustViewBounds="true"
-                        android:background="@color/background"
-                        android:contentDescription="Photo de Walidou"
-                        tools:scaleType="centerInside"
-                        tools:srcCompat="@tools:sample/backgrounds/scenic[3]" />
-
-                </LinearLayout>
-            </ScrollView>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/background"
-                android:orientation="vertical">
+                android:orientation="vertical"/>
 
-                <Button
-                    android:id="@+id/button7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/button"
-                    android:text="AIDER WALIDOU A RETROUVER SON CHEMIN"
-                    android:textSize="20sp"
-                    app:strokeColor="#FFFFFF"
-                    app:strokeWidth="3dp"
-                    android:layout_weight="1"/>
-
-                <Button
-                    android:id="@+id/button8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/button"
-                    android:text="LAISSER WALID SE DEBROUILLER TOUT SEUL"
-                    android:textSize="20sp" />
-
-                <Button
-                    android:id="@+id/button9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/button"
-                    android:text="FAIRE DEMI-TOUR"
-                    android:layout_weight="1"
-                    android:textSize="20sp" />
-            </LinearLayout>
-    </LinearLayout>
+            <TextView
+                android:id="@+id/texte_story"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
 </LinearLayout>
