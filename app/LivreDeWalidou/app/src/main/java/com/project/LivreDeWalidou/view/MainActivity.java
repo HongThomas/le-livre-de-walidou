@@ -11,7 +11,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.project.LivreDeWalidou.LivreDeWalidou.R;
+import com.project.LivreDeWalidou.R;
+import com.project.LivreDeWalidou.R;
+import com.project.LivreDeWalidou.model.AppFolder;
 import com.project.LivreDeWalidou.model.Game;
 import com.project.LivreDeWalidou.model.IGame;
 import com.project.LivreDeWalidou.model.IStory;
@@ -57,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        AppFolder appFolder = new AppFolder(this.getApplication());
+
         //this.test();
     }
 
@@ -96,4 +100,6 @@ public class MainActivity extends AppCompatActivity {
     private static StoryImage createNullImg() {
         return new StoryImage(new File("").toURI());
     }
+
+
 }

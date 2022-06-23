@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.project.LivreDeWalidou.LivreDeWalidou.R;
+import com.project.LivreDeWalidou.R;
 import com.project.LivreDeWalidou.model.Game;
 import com.project.LivreDeWalidou.viewmodel.LoadGameViewModel;
 

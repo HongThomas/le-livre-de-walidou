@@ -6,6 +6,8 @@ import com.project.LivreDeWalidou.model.IStory;
 import com.project.LivreDeWalidou.model.manager.StoryManager;
 import com.project.LivreDeWalidou.model.manager.StoryManagerJson;
 
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -19,6 +21,7 @@ public class StoryRepository implements IStoryRepository {
     private List<IStory> stories;
     private StoryManager storyManager;
     private File storiesFolder;
+    private PropertyChangeSupport pcs = new PropertyChangeSupport(this);
 
     public StoryRepository(File storiesFolder) {
         this.stories = new ArrayList<>();
@@ -37,6 +40,8 @@ public class StoryRepository implements IStoryRepository {
                 e.printStackTrace();
             }
         }
+
+        this.pcs.firePropertyChange("stories", this.stories, this.stories);
     }
 
     public List<IStory> getStoriesByTitle(String title) {
@@ -58,8 +63,29 @@ public class StoryRepository implements IStoryRepository {
                     story
             );
             this.stories.add(story);
+            this.pcs.firePropertyChange("stories", this.stories, this.stories);
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void addPropertyChangeListener(PropertyChangeListener listener) {
+        this.pcs.addPropertyChangeListener(listener);
+    }
+
+    @Override
+    public void removePropertyChangeListener(PropertyChangeListener listener) {
+        this.pcs.removePropertyChangeListener(listener);
+    }
+
+    @Override
+    public void addPropertyChangeListener(String property, PropertyChangeListener listener) {
+        this.pcs.addPropertyChangeListener(property, listener);
+    }
+
+    @Override
+    public void removePropertyChangeListener(String property, PropertyChangeListener listener) {
+        this.removePropertyChangeListener(property, listener);
     }
 }

@@ -31,6 +31,7 @@ public class StoryImage implements IStoryItem<Bitmap> {
 
     @Override
     public Bitmap getContent() {
+        if(this.content == null) this.initBitmap();
         return this.content;
     }
 

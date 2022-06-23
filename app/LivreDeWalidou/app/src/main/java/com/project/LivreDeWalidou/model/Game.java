@@ -34,6 +34,16 @@ public class Game implements IGame, IPropertyChangeProvider {
     }
 
     @Override
+    public void addPropertyChangeListener(String property, PropertyChangeListener listener) {
+        this.pcs.addPropertyChangeListener(property, listener);
+    }
+
+    @Override
+    public void removePropertyChangeListener(String property, PropertyChangeListener listener) {
+        this.pcs.addPropertyChangeListener(property, listener);
+    }
+
+    @Override
     public void makeChoice(Choice choice) {
         Page oldState = this.state;
         this.state = choice.getFollowingPage();

@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.project.LivreDeWalidou.LivreDeWalidou.R;
+import com.project.LivreDeWalidou.R;
 
 public class GameActivity extends AppCompatActivity {
 

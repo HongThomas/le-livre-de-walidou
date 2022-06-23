@@ -1,5 +1,7 @@
 package com.project.LivreDeWalidou.model.manager;
 
+import android.util.Log;
+
 import com.project.LivreDeWalidou.model.comp.StoryImage;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
@@ -12,6 +14,7 @@ import com.google.gson.JsonSerializer;
 import java.lang.reflect.Type;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Arrays;
 
 public class StoryImageAdapter implements JsonSerializer<StoryImage>, JsonDeserializer<StoryImage> {
 
@@ -21,7 +24,7 @@ public class StoryImageAdapter implements JsonSerializer<StoryImage>, JsonDeseri
         try {
             return new StoryImage(new URI(o.get("path").getAsString()));
         } catch (URISyntaxException e) {
-            e.printStackTrace();
+           Log.d("ERROR: ", Arrays.toString(e.getStackTrace()));
         }
         return null;
     }
@@ -29,7 +32,7 @@ public class StoryImageAdapter implements JsonSerializer<StoryImage>, JsonDeseri
     @Override
     public JsonElement serialize(StoryImage src, Type typeOfSrc, JsonSerializationContext context) {
         JsonObject json = new JsonObject();
-        json.addProperty("path", src.getURI().getPath());
+        json.addProperty("path", src.getURI().toString());
         return json;
     }
 }

@@ -4,6 +4,8 @@ import com.project.LivreDeWalidou.model.IGame;
 import com.project.LivreDeWalidou.model.manager.GameManager;
 import com.project.LivreDeWalidou.model.manager.GameManagerJson;
 
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -18,6 +20,7 @@ public class GameRepository implements IGameRepository {
     private List<IGame> games;
     private GameManager gameManager;
     private File gamesFolder;
+    private PropertyChangeSupport pcs = new PropertyChangeSupport(this);
 
     public GameRepository(File gamesFolder) {
         this.games = new ArrayList<>();
@@ -38,6 +41,8 @@ public class GameRepository implements IGameRepository {
             }
         });
 
+        this.pcs.firePropertyChange("games", this.games, this.games);
+
     }
 
     @Override
@@ -53,6 +58,7 @@ public class GameRepository implements IGameRepository {
     @Override
     public void addGame(IGame game) {
         this.games.add(game);
+        this.pcs.firePropertyChange("games", this.games, this.games);
         this.saveGame(game);
     }
 
@@ -67,4 +73,23 @@ public class GameRepository implements IGameRepository {
     }
 
 
+    @Override
+    public void addPropertyChangeListener(PropertyChangeListener listener) {
+        this.pcs.addPropertyChangeListener(listener);
+    }
+
+    @Override
+    public void removePropertyChangeListener(PropertyChangeListener listener) {
+        this.pcs.removePropertyChangeListener(listener);
+    }
+
+    @Override
+    public void addPropertyChangeListener(String property, PropertyChangeListener listener) {
+        this.pcs.addPropertyChangeListener(property, listener);
+    }
+
+    @Override
+    public void removePropertyChangeListener(String property, PropertyChangeListener listener) {
+        this.removePropertyChangeListener(property, listener);
+    }
 }
