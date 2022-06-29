@@ -1,0 +1,50 @@
+{
+  "background": {
+    "path": "/"
+  },
+  "introduction": {
+    "choices": [
+      {
+        "suiteHistoire": {
+          "choices": [],
+          "items": []
+        },
+        "text": {
+          "text": "Rester"
+        }
+      },
+      {
+        "suiteHistoire": {
+          "choices": [],
+          "items": []
+        },
+        "text": {
+          "text": "Partir"
+        }
+      }
+    ],
+    "items": [
+      {
+        "type": 1,
+        "content": {
+          "text": "Vous vous réveillez, vous avez les yeux collés et avez un léger mal de crâne (rien de grave)."
+        }
+      },
+      {
+        "type": 1,
+        "content": {
+          "text": "En vous levant vous vous rendez compte que vous ne connaissez pas les lieux. (Peut-être avez-vous bu hier, qui sait ?) Vous avez apparemment passé la nuit sous un magnifique chêne situé en haut d\u0027une colline, a son pied plusieurs cadavres de bouteilles : Tequila, Vodka, Absinthe et compagnie... (Vous avez sûrement bu hier.). Dans votre tête, c\u0027est le noir total, vous ne vous souvenez pas du tout comment vous êtes arrivé là (bizarre). Vous vous souvenez d\u0027une chose, vous vous appelez Walidou.\n"
+        }
+      },
+      {
+        "type": 0,
+        "content": {
+          "path": "/"
+        }
+      }
+    ]
+  },
+  "title": {
+    "text": "Le livre de walidou"
+  }
+}
